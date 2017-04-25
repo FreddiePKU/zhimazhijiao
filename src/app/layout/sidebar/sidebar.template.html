@@ -1,0 +1,156 @@
+<div class="js-sidebar-content">
+  <header class="logo hidden-sm-down">
+    <a href="index.html">{{config.name}}</a>
+  </header>
+  <div class="sidebar-status hidden-md-up">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="thumb-sm avatar float-right">
+        <img class="rounded-circle" src="assets/img/people/a5.jpg" alt="...">
+              </span>
+      <!-- .circle is a pretty cool way to add a bit of beauty to raw data.
+           should be used with bg-* and text-* classes for colors -->
+              <span class="circle bg-warning fw-bold text-gray-dark">
+                  13
+              </span>
+      &nbsp;
+       <strong>Symbolk</strong>
+      <b class="caret"></b>
+    </a>
+    <!-- #notifications-dropdown-menu goes here when screen collapsed to xs or sm -->
+  </div>
+  <!-- main notification links are placed inside of .sidebar-nav -->
+  <h5 class="sidebar-nav-title">个人相关 <a class="action-link" href="#"><i class="glyphicon glyphicon-refresh"></i></a></h5>
+  <ul class="sidebar-nav">
+    <li>
+      <a [routerLink]=" ['dashboard'] ">
+          <span class="icon">
+            <i class="fa fa-map-o"></i>
+          </span>
+        支教地图
+      </a>
+    </li>
+    <li>
+      <a [routerLink]=" ['extra/timeline'] ">
+        <span class="icon"><i class="glyphicon glyphicon-time"></i>
+        </span>
+        时间线
+      </a>
+    </li>
+    <li>
+      <a [routerLink]=" ['inbox'] ">
+          <span class="icon">
+            <i class="fa fa-envelope"></i>
+          </span>
+        消息
+          <span class="badge badge-danger">
+            9
+          </span>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]=" ['charts'] ">
+          <span class="icon">
+            <i class="glyphicon glyphicon-stats"></i>
+          </span>
+        数据统计
+      </a>
+    </li>
+    <li>
+      <a [routerLink]=" ['extra/calendar'] ">
+        <span class="icon">
+          <i class="fa fa-calendar"></i>
+        </span>
+        日程安排 <sup class="bg-transparent text-danger fs-sm fw-bold">2</sup>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]=" ['profile'] ">
+          <span class="icon">
+            <i class="glyphicon glyphicon-user"></i>
+          </span>
+        个人中心
+        <!--<sup class="text-warning fw-semi-bold">-->
+          <!--new-->
+        <!--</sup>-->
+      </a>
+    </li>
+  </ul>
+  <!-- every .sidebar-nav may have a title -->
+  <h5 class="sidebar-nav-title">支教交流 <a class="action-link" href="#"><i class="glyphicon glyphicon-refresh"></i></a></h5>
+  <ul class="sidebar-nav">
+    <li>
+      <a [routerLink]=" ['extra/search'] ">
+          <span class="icon">
+            <i class="glyphicon glyphicon-send"></i>
+          </span>
+        支教论坛
+        <sup class="text-warning fw-semi-bold">
+        新
+        </sup>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]=" ['tables/dynamic'] ">
+          <span class="icon">
+            <i class="glyphicon glyphicon-flag"></i>
+          </span>
+        支教群英榜
+      </a>
+    </li>
+    <li>
+      <a [routerLink]=" ['extra/gallery'] ">
+          <span class="icon">
+            <i class="glyphicon glyphicon-picture"></i>
+          </span>
+        支教摄影
+      </a>
+    </li>
+
+
+    <!--<li>-->
+      <!--<a class="collapsed" data-target="#sidebar-levels" data-toggle="collapse" data-parent="#sidebar">-->
+          <!--<span class="icon">-->
+            <!--<i class="fa fa-folder-open"></i>-->
+          <!--</span>-->
+        <!--Menu Levels-->
+        <!--<i class="toggle fa fa-angle-down"></i>-->
+      <!--</a>-->
+      <!--<ul id="sidebar-levels" class="collapse">-->
+        <!--<li><a href>Level 1</a></li>-->
+        <!--<li>-->
+          <!--<a class="collapsed" data-target="#sidebar-sub-levels" data-toggle="collapse" data-parent="#sidebar-levels">-->
+            <!--Level 2-->
+            <!--<i class="toggle fa fa-angle-down"></i>-->
+          <!--</a>-->
+          <!--<ul id="sidebar-sub-levels" class="collapse">-->
+            <!--<li><a href>Level 3</a></li>-->
+            <!--<li><a href>Level 3</a></li>-->
+          <!--</ul>-->
+        <!--</li>-->
+      <!--</ul>-->
+    <!--</li>-->
+  </ul>
+  <h5 class="sidebar-nav-title">标签 <a class="action-link" href="#"><i class="glyphicon glyphicon-plus"></i></a></h5>
+  <!-- some styled links in sidebar. ready to use as links to email folders, projects, groups, etc -->
+  <ul class="sidebar-labels">
+    <li>
+      <a href="#">
+        <!-- yep, .circle again -->
+        <i class="fa fa-circle text-warning mr-xs"></i>
+        <span class="label-name">最近浏览</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-circle text-gray mr-xs"></i>
+        <span class="label-name">已完成</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-circle text-danger mr-xs"></i>
+        <span class="label-name">特别关注</span>
+      </a>
+    </li>
+  </ul>
+</div>

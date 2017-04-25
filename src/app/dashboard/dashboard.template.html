@@ -1,0 +1,316 @@
+<h1 class="page-title">支教地图 <small><small>寻找离你最近的学校或志愿者</small></small></h1>
+<div class="clearfix mb-lg">
+
+</div>
+<div class="row">
+  <div class="col-lg-8 col-12">
+    <!-- minimal widget consist of .widget class. note bg-transparent - it can be any background like bg-gray,
+    bg-primary, bg-white -->
+    <section class="widget bg-transparent">
+      <!-- .widget-body is a mostly semantic class. may be a sibling to .widget>header or .widget>footer -->
+      <div class="widget-body">
+        <!-- for this particular example we also need to preload us map, as this is mapael's extension -->
+        <div class="mapael" geo-locations-widget>
+          <div class="stats">
+            <h6 class="text-white m-t-1">支教信息发布</h6>
+            <p class="h3 text-warning no-margin">
+              <strong number-animate>1 656</strong>
+              <i class="fa fa-map-marker"></i>
+            </p>
+          </div>
+          <div class="map">
+            <span>Alternative content for the map</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="col-lg-4 col-12">
+    <section widget class="widget bg-transparent">
+      <header>
+        <h5>
+          <span class="fw-semi-bold">支教需求数据</span>
+        </h5>
+        <div class="widget-controls widget-controls-hover">
+          <a href="#"><i class="glyphicon glyphicon-cog"></i></a>
+          <a href="#"><i class="fa fa-refresh"></i></a>
+          <a href="#" data-widgster="close"><i class="glyphicon glyphicon-remove"></i></a>
+        </div>
+      </header>
+      <div class="widget-body">
+        <p>状态: <strong>实时更新中</strong></p>
+        <p>
+          <span class="circle bg-warning"><i class="fa fa-map-marker"></i></span>
+          146所支教学校, 2759名志愿者
+        </p>
+        <div class="row progress-stats">
+          <div class="col-md-9 col-12">
+            <h6 class="name m-t-1">支教学校需求完成度</h6>
+            <!--<p class="description deemphasize">Some Cool Text</p>-->
+            <div class="bg-white progress progress-sm">
+              <div progress-animate class="progress-bar bg-primary progress-sm" style="width: 60%;" data-width="60%"></div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12 text-center">
+                                <span class="status rounded rounded-lg bg-body-light">
+                                    <small><span number-animate>75</span>%</small>
+                                </span>
+          </div>
+        </div>
+        <div class="row progress-stats">
+          <div class="col-md-9 col-12">
+            <h6 class="name m-t-1">志愿者需求完成度</h6>
+            <!--<p class="description deemphasize">P. to C. Conversion</p>-->
+            <div class="bg-white progress progress-sm">
+              <div progress-animate class="progress-bar bg-danger progress-sm" style="width: 39%;" data-width="39%"></div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12 text-center">
+                                <span class="status rounded rounded-lg bg-body-light">
+                                    <small><span number-animate>84</span>%</small>
+                                </span>
+          </div>
+        </div>
+        <div class="row progress-stats">
+          <div class="col-md-9 col-12">
+            <h6 class="name m-t-1">总体需求完成度</h6>
+            <!--<p class="description deemphasize">Average Bitrate</p>-->
+            <div class="bg-white progress progress-sm">
+              <div progress-animate class="progress-bar bg-success progress-sm" style="width: 80%;" data-width="80%"></div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12 text-center">
+                                <span class="status rounded rounded-lg bg-body-light">
+                                    <small><span number-animate>92</span>%</small>
+                                </span>
+          </div>
+        </div>
+
+        <div class="input-group mt">
+          <input type="text" class="form-control" placeholder="搜索">
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-default">
+                                  <i class="fa fa-search text-gray"></i>
+                                </button>
+                            </span>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<!--<div class="row">-->
+<div class="row">
+  <!--<div class="col-lg-6 col-12">-->
+    <!--<section widget class="widget">-->
+      <!--<div class="widget-image text-white">-->
+        <!--<img src="assets/img/pictures/18.jpg">-->
+        <!--<h4 class="title">-->
+          <!--<span class="fw-normal">Sunnyvale</span>, CA-->
+        <!--</h4>-->
+        <!--<div class="info text-right">-->
+          <!--<i class="fa fa-map-marker h1 no-margin mr-xs"></i>-->
+          <!--<h6 class="no-margin mt-xs">FLORIDA, USA</h6>-->
+          <!--<p class="fs-sm">9:41 am</p>-->
+        <!--</div>-->
+        <!--<div class="forecast">-->
+          <!--<div class="row">-->
+            <!--<div class="col-6 col-md-4">-->
+              <!--<div class="row mt-xs">-->
+                <!--<div class="col-6 no-padding">-->
+                  <!--<canvas skycon [weather]="'clear-day'" [color]="config.settings.colors['white']" width="40" height="40"></canvas>-->
+                  <!--<p class="no-margin fw-normal mt-n-xs">sunny</p>-->
+                <!--</div>-->
+                <!--<div class="col-6 no-padding">-->
+                  <!--<h6 class="fw-semi-bold no-margin">SUNDAY</h6>-->
+                  <!--<p class="value1 ">29&deg;</p>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-3 col-md-2 no-padding">-->
+              <!--<h6 class="no-margin">TOMMOROW</h6>-->
+              <!--<canvas class="mt-xs" skycon [weather]="'partly-cloudy-day'" [color]="config.settings.colors['white']" width="28" height="28"></canvas>-->
+              <!--<p class="no-margin fw-semi-bold">32&deg;</p>-->
+            <!--</div>-->
+            <!--<div class="col-3 col-md-2 no-padding">-->
+              <!--<h6 class="no-margin">TUE</h6>-->
+              <!--<canvas class="mt-xs" skycon [weather]="'rain'" [color]="config.settings.colors['white']" width="28" height="28"></canvas>-->
+              <!--<p class="no-margin fw-semi-bold">25&deg;</p>-->
+            <!--</div>-->
+            <!--<div class="col-3 col-md-2 no-padding">-->
+              <!--<h6 class="no-margin">WED</h6>-->
+              <!--<canvas class="mt-xs" skycon [weather]="'clear-day'" [color]="configFn.lightenColor(config.settings.colors['brand-warning'], 0.1)" width="28" height="28"></canvas>-->
+              <!--<p class="no-margin fw-semi-bold">28&deg;</p>-->
+            <!--</div>-->
+            <!--<div class="col-3 col-md-2 no-padding">-->
+              <!--<h6 class="no-margin">THU</h6>-->
+              <!--<canvas class="mt-xs" skycon [weather]="'partly-cloudy-day'" [color]="config.settings.colors['white']" width="28" height="28"></canvas>-->
+              <!--<p class="no-margin fw-semi-bold">17&deg;</p>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</section>-->
+    <!--<div class="row">-->
+      <!--<div class="col-md-6 col-12">-->
+        <!--<section class="widget no-padding text-center">-->
+          <!--<div class="row no-margin">-->
+            <!--<div class="col-5 bg-danger btlr bblr">-->
+              <!--<canvas class="mt" skycon [weather]="'clear-day'" [color]="config.settings.colors['white']" width="62" height="62"></canvas>-->
+              <!--<h6 class="text-white fw-normal m-t-1">FRIDAY</h6>-->
+            <!--</div>-->
+            <!--<div class="col-7">-->
+              <!--<p class="value0 text-danger mt-n-xs mr-n-xs">-->
+                <!--33&deg;-->
+              <!--</p>-->
+              <!--<p class="mt-n-sm m-b-0 fw-normal fs-sm text-muted">WINDY</p>-->
+              <!--<div class="row mt-n-xs mb-xs">-->
+                <!--<div class="col-6 no-padding">-->
+                  <!--<canvas skycon [weather]="'wind'" [color]="config.settings.colors['gray-light']" width="20" height="20"></canvas>-->
+                  <!--<div class="display-inline-block">-->
+                    <!--<p class="value6">4</p>-->
+                    <!--<p class="fs-sm no-margin mt-n-xs text-muted fw-normal">MPS</p>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-6 no-padding">-->
+                  <!--<canvas skycon [weather]="'rain'" [color]="config.settings.colors['gray-light']" width="20" height="20"></canvas>-->
+                  <!--<div class="display-inline-block">-->
+                    <!--<p class="value6">52</p>-->
+                    <!--<p class="fs-sm no-margin mt-n-xs text-muted fw-normal">MM</p>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</section>-->
+      <!--</div>-->
+      <!--<div class="col-md-6 col-12">-->
+        <!--<section class="widget no-padding text-center">-->
+          <!--<div class="row no-margin">-->
+            <!--<div class="col-7 bg-success btlr bblr">-->
+              <!--<p class="value0 text-white mt-sm mr-n-xs">-->
+                <!--20&deg;-->
+              <!--</p>-->
+              <!--<p class="text-white display-inline-block fw-normal display-inline-block mb">SUNDAY</p>-->
+            <!--</div>-->
+            <!--<div class="col-5">-->
+              <!--<canvas class="mt" skycon [weather]="'partly-cloudy-day'" [color]="config.settings.colors['brand-success']" width="60" height="60"></canvas>-->
+              <!--<p class="fw-normal fs-sm text-muted">WINDY</p>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</section>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  <div class="col-lg-4 col-12">
+    <section widget class="widget">
+      <header>
+        <h6><span class="badge badge-danger">New</span> Messages</h6>
+        <div class="widget-controls">
+          <a href="#"><i class="fa fa-refresh"></i></a>
+          <a href="#" data-widgster="close"><i class="glyphicon glyphicon-remove"></i></a>
+        </div>
+      </header>
+      <div class="widget-body no-padding">
+        <div class="list-group list-group-lg">
+          <a class="list-group-item" href="#">
+                                <span class="thumb-sm float-xs-left mr">
+                                    <img class="rounded-circle" src="assets/img/people/a2.jpg" alt="...">
+                                    <i class="status status-bottom bg-success"></i>
+                                </span>
+            <div>
+              <h6 class="no-margin">Chris Gray</h6>
+              <p class="help-block text-ellipsis no-margin">Hey! What's up? So many times since we</p>
+            </div>
+          </a>
+          <a class="list-group-item" href="#">
+                                <span class="thumb-sm float-xs-left mr">
+                                    <img class="rounded-circle" src="assets/img/people/a4.jpg" alt="...">
+                                    <i class="status status-bottom bg-success"></i>
+                                </span>
+            <div>
+              <h6 class="no-margin">Jamey Brownlow</h6>
+              <p class="help-block text-ellipsis no-margin">Good news coming tonight. Seems they agreed to proceed</p>
+            </div>
+          </a>
+          <a class="list-group-item" href="#">
+                                <span class="thumb-sm float-xs-left mr">
+                                    <img class="rounded-circle" src="assets/img/people/a1.jpg" alt="...">
+                                    <i class="status status-bottom bg-warning"></i>
+                                </span>
+            <div>
+              <h6 class="no-margin">Livia Walsh</h6>
+              <p class="help-block text-ellipsis no-margin">Check my latest email plz!</p>
+            </div>
+          </a>
+          <a class="list-group-item" href="#">
+                                <span class="thumb-sm float-xs-left mr">
+                                    <img class="rounded-circle" src="assets/img/people/a5.jpg" alt="...">
+                                    <i class="status status-bottom bg-danger"></i>
+                                </span>
+            <div>
+              <h6 class="no-margin">Jaron Fitzroy</h6>
+              <p class="help-block text-ellipsis no-margin">What about summer break?</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <footer class="bg-body-light mt">
+        <input type="search" class="form-control form-control-sm" placeholder="Search">
+      </footer>
+    </section>
+  </div>
+
+  <div class="col-lg-4 col-12">
+    <section widget class="widget">
+      <header>
+        <h6>Calendar</h6>
+        <div class="widget-controls">
+          <a href="#"><i class="glyphicon glyphicon-cog"></i></a>
+          <a href="#" data-widgster="close"><i class="glyphicon glyphicon-remove"></i></a>
+        </div>
+      </header>
+      <div class="widget-body no-padding">
+        <div class="bg-primary-light" bootstrap-calendar [events]="[
+                [
+                        '2/'+month+'/'+year,
+                    'The flower bed',
+                    '#',
+                    config.settings.colors['brand-primary'],
+                    'Contents here'
+                ],
+                [
+                        '5/'+month+'/'+year,
+                    'Stop world water pollution',
+                    '#',
+                    config.settings.colors['brand-warning'],
+                    'Have a kick off meeting with .inc company'
+                ],
+                [
+                        '18/'+month+'/'+year,
+                    'Light Blue 2.2 release',
+                    '#',
+                    config.settings.colors['brand-success'],
+                    'Some contents here'
+                ],
+                [
+                        '29/'+month+'/'+year,
+                    'A link',
+                    'http://www.flatlogic.com',
+                    config.settings.colors['brand-danger']
+                ]
+            ]"></div>
+        <div class="list-group fs-mini">
+          <a href="#" class="list-group-item text-ellipsis">
+            <span class="badge badge-pill badge-warning float-right">6:45</span>
+            Weed out the flower bed
+          </a>
+          <a href="#" class="list-group-item text-ellipsis">
+            <span class="badge badge-pill badge-success float-right">9:41</span>
+            Stop world water pollution
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
