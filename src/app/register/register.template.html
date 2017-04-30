@@ -1,40 +1,43 @@
 <div class="container">
-  <main id="content" class="widget-login-container" role="main">
+  <main id="content" class="widget-register-container" role="main">
     <div class="row">
       <div class="col-xl-4 col-md-6 col-10 offset-xl-4 offset-md-3 offset-1">
-        <h5 class="widget-login-logo animated fadeInUp">
+        <h5 class="widget-register-logo animated fadeInUp">
           <i class="fa fa-circle text-gray"></i>
 
           <i class="fa fa-circle text-warning"></i>
         </h5>
-        <section class="widget widget-login animated fadeInUp">
+        <section class="widget widget-register animated fadeInUp">
           <header>
             <h3>登陆芝麻支教</h3>
           </header>
           <div class="widget-body">
-            <p class="widget-login-info">
-              使用已注册的账户名或Email登陆.
+            <p class="widget-register-info">
+              注册芝麻支教帐号
             </p >
-            <p class="widget-login-info">
-              还没有账户？立即注册！
-            </p >
-            <form class="login-form mt-lg">
+            <form class="register-form mt-lg">
               <div class="form-group">
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="手机号">
+                <input type="number" class="form-control" id="phone" placeholder="手机号">
+              </div>
+              <div class="form-group">
+                <input type="text" class="phone_control" id="yanzheng" placeholder="  验证码">
+                <a class="btn btn-inverse btn-sm" [routerLink]="['/app', 'dashboard'] ">发送验证码</a>
               </div>
               <div class="form-group">
                 <input class="form-control" id="pswd" type="password" placeholder="密码">
               </div>
+              <div class="form-group">
+                <input class="form-control" id="pswd2" type="password" placeholder="确认密码">
+              </div>
               <div class="clearfix">
                 <div class="btn-toolbar float-right m-t-1">
-                  <a class="btn btn-inverse btn-sm" [routerLink]="['/register'] ">注册账户</ a>
-                  <a class="btn btn-inverse btn-sm" [routerLink]="['/app', 'dashboard'] ">登陆</ a>
+                  <a class="btn btn-inverse btn-sm" [routerLink]="[ '/login'] ">已有账号登录</a>
                 </div>
               </div>
               <div class="row m-t-1">
                 <div class="col-md-6 push-md-6">
                   <div class="clearfix">
-                    <div class="abc-checkbox widget-login-info float-right">
+                    <div class="abc-checkbox widget-register-info float-right">
                       <input type="checkbox" id="checkbox1" value="1">
                       <label for="checkbox1">保持登入</label>
                     </div>
