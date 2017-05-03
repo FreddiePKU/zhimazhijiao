@@ -3,15 +3,15 @@ import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { register } from './register.component';
+import { Register } from './register.component';
 
 export const routes = [
-  { path: '', component: register, pathMatch: 'full' }
+  { path: '', component: Register, pathMatch: 'full' }
 ];
 
 @NgModule({
   declarations: [
-    register
+    Register
   ],
   imports: [
     CommonModule,
@@ -19,6 +19,6 @@ export const routes = [
     RouterModule.forChild(routes),
   ]
 })
-export class registerModule {
+export class RegisterModule {
   static routes = routes;
 }

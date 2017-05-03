@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
+import { AlertService, UserService, AuthenticationService } from './_services/index';
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -47,7 +48,10 @@ type StoreType = {
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,
-    APP_PROVIDERS
+    APP_PROVIDERS,
+    UserService,
+    AlertService,
+    AuthenticationService
   ]
 })
 export class AppModule {
